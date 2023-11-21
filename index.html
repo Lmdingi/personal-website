@@ -15,7 +15,7 @@
     <!-- background -->
     <div class="gradient"></div>
     <video autoplay loop muted plays-inline class="video">
-      <source src="media/bgvideo.mp4" type="video/mp4">
+      <source src="media/bgvideo.mp4" type="video/mp4" />
     </video>
     <nav>
       <!-- profile picture -->
@@ -28,18 +28,60 @@
 
       <!-- menu -->
       <ul class="nav-ul">
-        <li class="nav-link"><div class="li-text">About</div></li>
-        <li class="nav-link"><div class="li-text">Skills</div></li>
-        <li class="nav-link"><div class="li-text">Contact</div></li>
+        <li class="nav-link">
+          <a href="#intr"><div class="li-text">Home</div></a>
+        </li>
+        <li class="nav-link">
+          <a href="#about"><div class="li-text">About</div></a>
+        </li>
+        <li class="nav-link">
+          <a href="#skills"><div class="li-text">Skills</div></a>
+        </li>
+        <li class="nav-link">
+          <a href="#"><div class="li-text">Contact</div></a>
+        </li>
       </ul>
     </nav>
 
+    <!-- ******************************************************************************** -->
     <!-- bg img -->
-    <div class="intro-box">
+    <div class="intro-box" id="intr">
       <h1 class="intro">
         Hi, I'm Luks.<br />
         I am learning to design and build Websites.
       </h1>
+    </div>
+
+    <!-- ******************************************************************************** -->
+    <!-- about -->
+    <div class="abt" id="about">
+      <div class="potrait">
+        <img src="media/luxolo.jpg" alt="Potrait" />
+      </div>
+      <div class="abt-me">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <h3><em>"Don't let yesterday take up too much of today."</em> — Will Rogers
+        </h3>
+      </div>
+    </div>
+
+    <!-- ******************************************************************************** -->
+    <!-- skills -->
+    <div style="background-color: rgba(4, 64, 64, 0.2);" id="skills">
+      <div class="line"></div>
+
+      <table style="border: 1px red solid;">
+        <tbody>
+          <tr><td><img src="media/html5.png" alt=""></td><td><img src="media/css.png" alt=""></td><td><img src="media/js.png" alt=""></td></tr>
+          <tr><td><img src="media/github.png" alt=""></td><td><img src="media/git.png" alt=""></td><td><img src="" alt=""></td></tr>
+        </tbody>
+      </table>
+
     </div>
   </body>
 </html>
