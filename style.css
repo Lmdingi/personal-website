@@ -39,6 +39,7 @@ body {
 /* nav */
 nav {
   position: fixed;
+  z-index: 1;
   width: 100vw;
   background-color: rgba(4, 64, 64, 0.8);
   display: flex;
@@ -156,10 +157,34 @@ a {
 /* ----------------------------------------------------------------- */
 /* skills */
 .skills-info {
+  /* border: #044040 solid 2px; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.skils-all{
+  /* border: red solid 2px; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background-color: #f2f2f2;
 }
+
+.cv {
+  position: relative;
+  /* border: black solid 2px; */
+  width: 400px;
+  height: inherit;
+  background-color: #f2f2f2;
+}
+
+#resume {
+  position: absolute;
+  left: 50px;
+  height: 300px;
+  width: auto;
+}
+
 .skill-row {
   display: flex;
   justify-content: space-around;
