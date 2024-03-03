@@ -40,38 +40,115 @@
     </div>
     <!-- about -->
     <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img class="logo" src="images/about_me.png" />
-          </div>
-          <div class="about-col-2">
-            <p class="about-col-2-text">
-              Lorem ipsum is placeholder text commonly used in the graphic,
-              print, and publishing industries for previewing layouts and visual
-              mockups. Lorem ipsum is placeholder text commonly used in the
-              graphic, print, and publishing industries for previewing layouts
-              and visual mockups. print, and publishing industries for
-              previewing layouts and visual mockups.
-            </p>
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/about_me.png" class="side-img" />
+        </div>
+        <div class="about-col-2">
+          <p class="qout">
+            Ever since I started learning how to code, <br />my curiosity for
+            web development has grown. <br />I believe I have room to grow as an
+            expert and learn new things.
+          </p>
 
-            <div class="tab-titles">
-              <p class="tab-links active-link">Skills</p>
-              <p class="tab-links">Experience</p>
-              <p class="tab-links">Education</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">
+              skils
+            </p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>HTML</span><br />started learning how to code</li>
+              <li><span>CSS</span><br />started learning how to code</li>
+              <li><span>JS</span><br />started learning how to code</li>
+              <li><span>Git Hub</span><br />started learning how to code</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+              <a href="images/Resume.pdf" target="_blank"><button class="sub-btn btn2" type="button">Download CV</button></a>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2011</span><br />started learning how to code</li>
+              <li><span>2017</span><br />started learning how to code</li>
+              <li><span>2023</span><br />started learning how to code</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="my-Work">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img class="bg" src="images/logo-inverted.png" alt="" />
+            <img class="constuction" src="images/inprogress.gif" alt="" />
+            <div class="layer">
+              <h3>Work In Progress</h3>
             </div>
-            <div class="tab-contents">
-              <ul>
-                <li><span>HTML</span><br />Design Web(specify skills)</li>
-                <li><span>CSS</span><br />Design Web(specify skills)</li>
-                <li><span>JS</span><br />Design Web(specify skills)</li>
-                <li><span>Github</span><br />Design Web(specify skills)</li>
-                <li><span>Git</span><br />Design Web(specify skills)</li>
-              </ul>
+          </div>
+          <div class="work">
+            <img class="bg" src="images/logo-inverted.png" alt="" />
+            <img class="constuction" src="images/inprogress.gif" alt="" />
+            <div class="layer">
+              <h3>Work In Progress</h3>
+            </div>
+          </div>
+          <div class="work">
+            <img class="bg" src="images/logo-inverted.png" alt="" />
+            <img class="constuction" src="images/inprogress.gif" alt="" />
+            <div class="layer">
+              <h3>Work In Progress</h3>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- contacts -->
+    <div id="contacts">
+      <div class="row">
+        <div class="contact-left">
+          <img src="images/about_me.png" class="side-img" />
+        </div>
+
+        <div class="contact-right">
+          <div class="social-icons">
+            <a href="" title="lmdingi4@gmail.com" target="_blank"><i class="fa-solid fa-square-envelope"></i></a>
+            <a href="" title="0746973745" target="_blank"><i class="fa-solid fa-square-phone"></i></a>
+            <a href="https://www.linkedin.com/in/luxolo-mdingi-01a17b128" title="Luxolo Mdingi" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/BraLuks" title="@BraLuks" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+          </div>
+
+          <form action="">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="Message"
+              rows="6"
+              placeholder="Your Massage"
+            ></textarea>
+            <button class="sub-btn btn1" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Luxolo Mdingi.</p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
   </body>
 </html>
