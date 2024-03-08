@@ -32,20 +32,26 @@
             <li><a href="#contacts">Contact</a></li>
           </ul>
         </nav>
+
         <div class="header-text">
           <p>Web Developer</p>
-          <h1>Hello, my name is <span>Luxolo Mdingi</span></h1>
+          <h1>Hello, <br>my name is <span>Luxolo Mdingi</span></h1>
         </div>
+
+        <img src="images/Profile-Picture.png" class="img-home">
+          
+
+
       </div>
     </div>
-    <!-- about -->
+    <!-------------------------------------------------------------------- about -->
     <div id="about">
       <div class="row">
         <div class="about-col-1">
           <img src="images/about_me.png" class="side-img" />
         </div>
         <div class="about-col-2">
-          <p class="qout">
+          <p class="quot">
             Ever since I started learning how to code, <br />my curiosity for
             web development has grown. <br />I believe I have room to grow as an
             expert and learn new things.
@@ -53,7 +59,7 @@
 
           <div class="tab-titles">
             <p class="tab-links active-link" onclick="opentab('skills')">
-              skils
+              Skills
             </p>
             <p class="tab-links" onclick="opentab('experience')">Experience</p>
             <p class="tab-links" onclick="opentab('education')">Education</p>
@@ -68,7 +74,7 @@
           </div>
 
           <div class="tab-contents" id="experience">
-              <a href="images/Resume.pdf" target="_blank"><button class="sub-btn btn2" type="button">Download CV</button></a>
+              <a class="btn btn-abtme" href="images/Resume.pdf" target="_blank">Download CV</a>
           </div>
 
           <div class="tab-contents" id="education">
@@ -81,28 +87,28 @@
         </div>
       </div>
     </div>
-    <!-- portfolio -->
+    <!-------------------------------------------------------------------- portfolio -->
     <div id="portfolio">
       <div class="container">
-        <h1 class="my-Work">My Work</h1>
+        <h1>My Work</h1>
         <div class="work-list">
           <div class="work">
-            <img class="bg" src="images/logo-inverted.png" alt="" />
-            <img class="constuction" src="images/inprogress.gif" alt="" />
+            <img src="images/logo-inverted.png"/>
+            <img class="construction" src="images/inprogress.gif" alt="" />
             <div class="layer">
               <h3>Work In Progress</h3>
             </div>
           </div>
           <div class="work">
-            <img class="bg" src="images/logo-inverted.png" alt="" />
-            <img class="constuction" src="images/inprogress.gif" alt="" />
+            <img src="images/logo-inverted.png"/>
+            <img class="construction" src="images/inprogress.gif" alt="" />
             <div class="layer">
               <h3>Work In Progress</h3>
             </div>
           </div>
           <div class="work">
-            <img class="bg" src="images/logo-inverted.png" alt="" />
-            <img class="constuction" src="images/inprogress.gif" alt="" />
+            <img src="images/logo-inverted.png"/>
+            <img class="construction" src="images/inprogress.gif" alt="" />
             <div class="layer">
               <h3>Work In Progress</h3>
             </div>
@@ -113,41 +119,43 @@
 
     <!-- contacts -->
     <div id="contacts">
-      <div class="row">
-        <div class="contact-left">
-          <img src="images/about_me.png" class="side-img" />
-        </div>
-
-        <div class="contact-right">
-          <div class="social-icons">
-            <a href="" title="lmdingi4@gmail.com" target="_blank"><i class="fa-solid fa-square-envelope"></i></a>
-            <a href="" title="0746973745" target="_blank"><i class="fa-solid fa-square-phone"></i></a>
-            <a href="https://www.linkedin.com/in/luxolo-mdingi-01a17b128" title="Luxolo Mdingi" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://twitter.com/BraLuks" title="@BraLuks" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <img src="images/about_me.png" class="side-img" />
           </div>
+  
+          <div class="contact-right">
+            <div class="social-icons">
+              <a href="" target="_blank"><i class="fa-solid fa-square-envelope"></i>lmdingi4@gmail.com</a>
+              <a href="" target="_blank"><i class="fa-solid fa-square-phone"></i>0746973745</a>
+              <a href="https://www.linkedin.com/in/luxolo-mdingi-01a17b128" target="_blank"><i class="fa-brands fa-linkedin"></i>Luxolo Mdingi</a>
+              <a href="https://twitter.com/BraLuks" target="_blank"><i class="fa-brands fa-square-x-twitter"></i>@BraLuks</a>
+            </div>
+  
+            <form action="">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Massage"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
 
-          <form action="">
-            <input type="text" name="Name" placeholder="Your Name" required />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-            />
-            <textarea
-              name="Message"
-              rows="6"
-              placeholder="Your Massage"
-            ></textarea>
-            <button class="sub-btn btn1" type="submit">Submit</button>
-          </form>
+        <div class="copyright">
+          <p>Copyright <i class="fa-regular fa-copyright"></i> Luxolo Mdingi.</p>
         </div>
       </div>
-
-      <div class="copyright">
-        <p>Copyright <i class="fa-regular fa-copyright"></i> Luxolo Mdingi.</p>
       </div>
-    </div>
 
     <script src="main.js"></script>
   </body>
