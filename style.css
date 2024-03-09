@@ -124,6 +124,7 @@ nav ul li a:hover:after {
 .about-col-2, .contact-right {
   position: relative;
   flex-basis: 60%;
+  padding-right: 50px;
 }
 
 .quot {
@@ -199,6 +200,19 @@ nav ul li a:hover:after {
 .btn-abtme{
   position: absolute;
 }
+
+.rating{
+  display: inline-block;
+  border: 1px orange solid;
+  background-color: var(--color-primary);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.unrate{
+  background-color: var(--color-light-gray);
+}
 /* ******************************************************** portfolio */
 #portfolio {
   padding: 50px 0;
@@ -236,6 +250,25 @@ nav ul li a:hover:after {
   position: absolute;
   top: 20px;
   scale: 0.8;
+}
+
+.container .github-link{
+  position: absolute;
+  bottom: -100px;
+  text-decoration: none;
+  color: var(--color-light-gray);
+}
+
+.container .github-link i{
+  color: var(--color-light-gray);
+  margin: 15px;
+  font-size: 25px;
+  transition: transform 0.5s;
+}
+
+.container .github-link i:hover{
+  color: orange;
+  transform: translateY(-5px);
 }
 
 /* ******************************************************** contacts */
@@ -280,65 +313,6 @@ form .btn2{
   margin-top: 10px;
   cursor: pointer;
 }
-/* .social-icons {
-  display: flex;
-  border: orange 1px solid;
-  justify-content: space-around;
-} */
-
-/* .social-icons a i {
-  color: var(--color-primary);
-  transition: transform 0.5s;
-} */
-
-/* .social-icons a i:hover {
-  color: var(--color-light-gray);
-  transform: translateY(-1px);
-} */
-
-/* .btn {
-  padding: 1px;
-  font-size: 2px;
-  color: var(--color-white);
-  background-color: orange;
-  border-radius: 1px;
-  text-decoration: none;
-} */
-
-/* .btn:hover {
-  color: var(--color-primary);
-} */
-
-/* form {
-  border: orange 1px solid;
-  display: flex;
-  flex-direction: column;
-} */
-
-/* form input,
-form textarea {
-  width: 100%;
-  border: 0;
-  outline: none;
-  background: var(--color-light-gray);
-  padding: 1px;
-  margin: 1px 0;
-  font-size: 3px;
-  border-radius: 1px;
-} */
-
-/* .sub-btn {
-  font-size: 3px;
-  color: var(--color-primary);
-  border-color: orange;
-  background-color: orange;
-  border-radius: 1px;
-  border-width: 1px;
-} */
-
-/* .btn1 {
-  width: 15px;
-} */
 
 .copyright {
   position: absolute;
