@@ -16,6 +16,9 @@
   --br-sm-2: 14px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 /* ******************************************************** body */
 body {
   background: var(--color-primary);
@@ -96,7 +99,8 @@ nav ul li a:hover:after {
 }
 
 /* ******************************************************** about */
-#about, #contacts {
+#about,
+#contacts {
   padding: 80px 0;
   background: var(--color-white);
   color: var(--color-primary);
@@ -109,7 +113,8 @@ nav ul li a:hover:after {
   flex-wrap: wrap;
 }
 
-.about-col-1, .contact-left {
+.about-col-1,
+.contact-left {
   position: relative;
   flex-basis: 35%;
 }
@@ -121,7 +126,8 @@ nav ul li a:hover:after {
   height: auto;
 }
 
-.about-col-2, .contact-right {
+.about-col-2,
+.contact-right {
   position: relative;
   flex-basis: 60%;
   padding-right: 50px;
@@ -186,22 +192,22 @@ nav ul li a:hover:after {
   padding: 14px 50px;
   border-radius: 6px;
   text-decoration: none;
-  border: 1px var(--color-primary) solid; 
+  border: 1px var(--color-primary) solid;
   color: var(--color-primary);
   background-color: orange;
 }
 
-.btn:hover{
-  border: 1px orange solid; 
+.btn:hover {
+  border: 1px orange solid;
   color: var(--color-light-gray);
   background-color: var(--color-primary);
 }
 
-.btn-abtme{
+.btn-abtme {
   position: absolute;
 }
 
-.rating{
+.rating {
   display: inline-block;
   border: 1px orange solid;
   background-color: var(--color-primary);
@@ -210,7 +216,7 @@ nav ul li a:hover:after {
   border-radius: 50%;
 }
 
-.unrate{
+.unrate {
   background-color: var(--color-light-gray);
 }
 /* ******************************************************** portfolio */
@@ -227,7 +233,7 @@ nav ul li a:hover:after {
 }
 
 .work {
-  border: 3px rgba(255, 255, 255, .1) solid;
+  border: 3px rgba(255, 255, 255, 0.1) solid;
   position: relative;
   /* overflow: hidden; */
 }
@@ -238,7 +244,6 @@ nav ul li a:hover:after {
 }
 
 .layer {
-  /* border: 3px red solid; */
   color: orange;
   width: 100%;
   top: -30px;
@@ -252,21 +257,21 @@ nav ul li a:hover:after {
   scale: 0.8;
 }
 
-.container .github-link{
+.container .github-link {
   position: absolute;
   bottom: -100px;
   text-decoration: none;
   color: var(--color-light-gray);
 }
 
-.container .github-link i{
+.container .github-link i {
   color: var(--color-light-gray);
   margin: 15px;
   font-size: 25px;
   transition: transform 0.5s;
 }
 
-.container .github-link i:hover{
+.container .github-link i:hover {
   color: orange;
   transform: translateY(-5px);
 }
@@ -279,26 +284,27 @@ nav ul li a:hover:after {
   text-decoration: none;
 }
 
-.contact-right .social-icons a i{
+.contact-right .social-icons a i {
   color: var(--color-primary);
   margin: 15px;
   font-size: 25px;
   transition: transform 0.5s;
 }
 
-.contact-right .social-icons a i:hover{
+.contact-right .social-icons a i:hover {
   color: orange;
   transform: translateY(-5px);
 }
 
-.contact-right form{
+.contact-right form {
   width: 100%;
 }
 
-form input, form textarea{
+form input,
+form textarea {
   width: 100%;
   border: 0;
-  outline: none;;
+  outline: none;
   background-color: var(--color-light-gray);
   padding: 15px;
   margin: 10px 0;
@@ -307,7 +313,7 @@ form input, form textarea{
   border-radius: 6px;
 }
 
-form .btn2{
+form .btn2 {
   padding: 14px 50px;
   font-size: 16px;
   margin-top: 10px;
@@ -317,10 +323,203 @@ form .btn2{
 .copyright {
   position: absolute;
   left: 0;
-  bottom: -49px;
+  bottom: -110px;
   width: 100%;
   text-align: center;
   padding: 10px;
   background-color: var(--color-light-gray);
   font-weight: 300;
+}
+
+#msg {
+  color: orange;
+  margin: -40px;
+  display: block;
+  text-align: center;
+}
+
+/************************************************* small screen */
+nav .fa-solid {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  #header {
+    height: 64vh;
+  }
+
+  .img-home {
+    height: 380px;
+    right: 0px;
+    top: 160px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .header-text {
+    margin-top: 80%;
+    font-size: 16px;
+  }
+
+  .header-text h1 {
+    margin-top: 50px;
+    font-size: 22px;
+  }
+
+  nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+
+  nav ul {
+    background: orange;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  /********************************************** about */
+  #about,
+  #contacts {
+    padding: 10px 0;
+    height: 64vh;
+  }
+
+  .about-col-1,
+  .contact-left {
+    flex-basis: 100%;
+    height: 102px;
+  }
+
+  .side-img {
+    width: 100px;
+    left: 20px;
+  }
+
+  .about-col-2,
+  .contact-right {
+    flex-basis: 100%;
+    padding: 10px 20px;
+  }
+
+  .quot {
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: 200;
+  }
+
+  .tab-titles {
+    margin: 20px 0 20px;
+  }
+
+  .tab-links {
+    margin-right: 40px;
+    font-size: 14px;
+  }
+
+  #skills ul li {
+    display: inline-block;
+    width: 116px;
+  }
+  #education ul li {
+    font-size: 12px;
+  }
+
+  #experience .btn {
+    margin: 20px auto;
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  /********************************************** portfolio */
+  #portfolio {
+    padding: 0;
+    height: 65vh;
+  }
+
+  #portfolio .container h1 {
+    font-size: 25px;
+  }
+
+  .work-list {
+    margin-top: 20px;
+  }
+
+  .work img {
+    width: 30%;
+  }
+
+  .layer {
+    top: 35px;
+    left: 125px;
+    font-size: small;
+    width: fit-content;
+  }
+
+  .construction {
+    top: 10px;
+  }
+
+  .container .github-link {
+    bottom: -70px;
+  }
+
+  /********************************************* contacts */
+
+  .contact-right {
+    height: 85vh;
+  }
+
+  .contact-right .social-icons a {
+    display: inline-block;
+  }
+
+  .contact-right .social-icons a i {
+    margin: 5px;
+  }
+
+  form input,
+  form textarea {
+    padding: 5px;
+    margin: 5px 0;
+    font-size: 12px;
+  }
+
+  form .btn2 {
+    padding: 10px 40px;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .copyright {
+    top: 502px;
+    height: fit-content;
+    padding: 10px;
+    background-color: var(--color-light-gray);
+    font-size: small;
+  }
+
+  #msg {
+    font-size: smaller;
+    margin: -0px;
+  }
 }
