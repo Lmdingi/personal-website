@@ -343,11 +343,7 @@ nav .fa-solid {
   display: none;
 }
 
-@media only screen and (max-width: 700px) {
-  #header {
-    height: 64vh;
-  }
-
+@media only screen and (max-width: 600px) {
   .img-home {
     height: 380px;
     right: 0px;
@@ -401,7 +397,6 @@ nav .fa-solid {
   #about,
   #contacts {
     padding: 10px 0;
-    height: 64vh;
   }
 
   .about-col-1,
@@ -453,7 +448,6 @@ nav .fa-solid {
   /********************************************** portfolio */
   #portfolio {
     padding: 0;
-    height: 65vh;
   }
 
   #portfolio .container h1 {
@@ -485,10 +479,6 @@ nav .fa-solid {
 
   /********************************************* contacts */
 
-  .contact-right {
-    height: 85vh;
-  }
-
   .contact-right .social-icons a {
     display: inline-block;
   }
@@ -511,7 +501,7 @@ nav .fa-solid {
   }
 
   .copyright {
-    top: 502px;
+    bottom: -21px;
     height: fit-content;
     padding: 10px;
     background-color: var(--color-light-gray);
