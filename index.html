@@ -1,58 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <!-- header -->
-    <div id="header">
-      <div class="container">
-        <nav>
-          <img src="images/logo-inverted.png" class="logo" />
-          <ul id="sideMenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contacts">Contact</a></li>
-            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
-          </ul>
-          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
-        </nav>
-
-        <div class="header-text">
-          <p>Web Developer</p>
-          <h1>Hello, <br />my name is <span>Luxolo Mdingi</span></h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        >
+    </head>
+    <body>
+        <!-- header -->
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo-inverted.png" class="logo" alt="">
+                    <ul id="sideMenu">
+                        <li>
+                            <a href="#header">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contacts">Contact</a>
+                        </li>
+                        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Web Developer</p>
+                    <h1>
+                        Hello,
+                        <br>
+                        my name is
+                        <span>Luxolo Mdingi</span>
+                    </h1>
+                </div>
+                <img src="images/Profile-Picture.png" class="img-home" alt="">
+            </div>
         </div>
-
-        <img src="images/Profile-Picture.png" class="img-home" />
-      </div>
-    </div>
-
-    <!-------------------------------------------------------------------- about -->
-    <div id="about">
-      <div class="row container">
-        <div class="about-col-1">
-          <img class="side-img" src="images/about_me.png"/>
-        </div>
-        <div class="about-col-2">
-          <p class="quot">
-            As an aspiring web developer, I believe that I am now prepared to
+        <!-- about -->
+        <div id="about">
+            <div class="row container">
+                <div class="about-col-1">
+                    <img class="side-img" src="images/about_me.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <p class="quot">
+                        As an aspiring web developer, I believe that I am now prepared to
             take advantage of any opportunity that may present itself to advance
             in my career-building process. Since I began my journey to learn how
             to code, I've taken ownership of my professional development, and I
@@ -60,185 +67,190 @@
             proficiency. I'm keen to learn and advance my knowledge and
             abilities. Currently, I can confidently say that I understand the
             fundamentals of basic coding.
-          </p>
-
-          <div class="tab-titles">
-            <p class="tab-links active-link" onclick="openTab('skills')">
-              Skills
-            </p>
-            <p class="tab-links" onclick="openTab('experience')">Experience</p>
-            <p class="tab-links" onclick="openTab('education')">Education</p>
-          </div>
-          <div class="tab-contents active-tab" id="skills">
-            <ul>
-              <li><span>HTML</span>
-              <div class="rateBox" style="display: inline">
-                <div class="rating"></div>
-                <div class="rating"></div>
-                <div class="rating"></div>
-                <div class="rating unrate"></div>
-                <div class="rating unrate"></div>
-                <div class="rating unrate"></div>
-              </div>
-            </li>
-
-              <li><span>CSS</span>
-              <div class="rateBox" style="display: inline">
-                <div class="rating"></div>
-                <div class="rating"></div>
-                <div class="rating unrate"></div>
-                <div class="rating unrate"></div>
-                <div class="rating unrate"></div>
-                <div class="rating unrate"></div>
-              </div>
-            </li>
-
-              <li><span>JS</span>
-              <div class="rateBox" style="display: inline">
-                <div class="rating"></div>
-                <div class="rating"></div>
-                <div class="rating unrate"></div>
-                <div class="rating unrate"></div>
-                <div class="rating unrate"></div>
-                <div class="rating unrate"></div>
-              </div>
-            </li>
-
-              <li><span>Git Hub</span>
-              <div class="rateBox" style="display: inline">
-                <div class="rating"></div>
-                <div class="rating unrate"></div>
-                <div class="rating unrate"></div>
-                <div class="rating unrate"></div>
-                <div class="rating unrate"></div>
-                <div class="rating unrate"></div>
-              </div>
-            </li>
-
-              <li><span>Git</span>
-              <div class="rateBox" style="display: inline">
-                <div class="rating"></div>
-                <div class="rating unrate"></div>
-                <div class="rating unrate"></div>
-                <div class="rating unrate"></div>
-                <div class="rating unrate"></div>
-                <div class="rating unrate"></div>
-              </div>
-            </ul>
-          </div>
-        </li>
-
-          <div class="tab-contents" id="experience">
-            <a
-              class="btn"
-              href="images/WebDevResume.pdf"
-              target="_blank"
-              >Download CV</a
-            >
-          </div>
-
-          <div class="tab-contents" id="education">
-            <ul>
-              <li>
-                <span>2011</span><br />Grade 12<br />Chris Hani High School
-              </li>
-              <li>
-                <span>2015 - 2017</span><br />National Diploma in Film and Video
-                Technology<br />CPUT
-              </li>
-              <li>
-                <span>2023 - Present</span><br />National Senior Certificate in
-                Information Technology (web development)<br />Umuzi Academy
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-------------------------------------------------------------------- portfolio -->
-    <div id="portfolio">
-      <div class="container">
-        <h1>My Work</h1>
-        <div class="work-list">
-          <div class="work">
-            <img src="images/logo-inverted.png" />
-            <img class="construction" src="images/inprogress.gif" alt="" />
-            <div class="layer">
-              <h3>Work In Progress</h3>
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">
+                            Skills
+                        </p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>HTML</span>
+                                <div class="rateBox" style="display: inline">
+                                    <div class="rating"></div>
+                                    <div class="rating"></div>
+                                    <div class="rating"></div>
+                                    <div class="rating unrate"></div>
+                                    <div class="rating unrate"></div>
+                                    <div class="rating unrate"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>CSS</span>
+                                <div class="rateBox" style="display: inline">
+                                    <div class="rating"></div>
+                                    <div class="rating"></div>
+                                    <div class="rating unrate"></div>
+                                    <div class="rating unrate"></div>
+                                    <div class="rating unrate"></div>
+                                    <div class="rating unrate"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>JS</span>
+                                <div class="rateBox" style="display: inline">
+                                    <div class="rating"></div>
+                                    <div class="rating"></div>
+                                    <div class="rating unrate"></div>
+                                    <div class="rating unrate"></div>
+                                    <div class="rating unrate"></div>
+                                    <div class="rating unrate"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Git Hub</span>
+                                <div class="rateBox" style="display: inline">
+                                    <div class="rating"></div>
+                                    <div class="rating unrate"></div>
+                                    <div class="rating unrate"></div>
+                                    <div class="rating unrate"></div>
+                                    <div class="rating unrate"></div>
+                                    <div class="rating unrate"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Git</span>
+                                <div class="rateBox" style="display: inline">
+                                    <div class="rating"></div>
+                                    <div class="rating unrate"></div>
+                                    <div class="rating unrate"></div>
+                                    <div class="rating unrate"></div>
+                                    <div class="rating unrate"></div>
+                                    <div class="rating unrate"></div>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <a class="btn" href="images/WebDevResume.pdf" target="_blank">Download CV</a>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li>
+                                    <span>2011</span>
+                                    <br>
+                                    Grade 12
+                                    <br>
+                                    Chris Hani High School
+                                </li>
+                                <li>
+                                    <span>2015 - 2017</span>
+                                    <br>
+                                    National Diploma in Film and Video
+                Technology
+                                    <br>
+                                    CPUT
+                                </li>
+                                <li>
+                                    <span>2023 - Present</span>
+                                    <br>
+                                    National Senior Certificate in
+                Information Technology (web development)
+                                    <br>
+                                    Umuzi Academy
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="work">
-            <img src="images/logo-inverted.png" />
-            <img class="construction" src="images/inprogress.gif" />
-            <div class="layer">
-              <h3>Work In Progress</h3>
+            <!-- portfolio -->
+            <div id="portfolio">
+                <div class="container">
+                    <h1>My Work</h1>
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="images/logo-inverted.png" alt="">
+                            <img class="construction" src="images/inprogress.gif" alt="">
+                            <div class="layer">
+                                <h3>Work In Progress</h3>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="images/logo-inverted.png" alt="">
+                            <img class="construction" src="images/inprogress.gif" alt="">
+                            <div class="layer">
+                                <h3>Work In Progress</h3>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="images/logo-inverted.png" alt="">
+                            <img class="construction" src="images/inprogress.gif" alt="">
+                            <div class="layer">
+                                <h3>Work In Progress</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="github-link" href="https://github.com/Lmdingi" target="_blank">
+                        <i class="fa-brands fa-square-github"></i>
+                        lmdingi
+                    </a>
+                </div>
             </div>
-          </div>
-          <div class="work">
-            <img src="images/logo-inverted.png" />
-            <img class="construction" src="images/inprogress.gif" alt="" />
-            <div class="layer">
-              <h3>Work In Progress</h3>
+            <!-- contacts -->
+            <div id="contacts">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <img class="side-img" src="images/contact-me.png" alt="">
+                        </div>
+                        <div class="contact-right">
+                            <div class="social-icons">
+                                <a>
+                                    <i class="fa-solid fa-square-envelope"></i>
+                                    lmdingi4@gmail.com
+                                </a>
+                                <a>
+                                    <i class="fa-solid fa-square-phone"></i>
+                                    0746973745
+                                </a>
+                                <a href="https://www.linkedin.com/in/luxolo-mdingi-01a17b128" target="_blank">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                    Luxolo Mdingi
+                                </a>
+                                <a href="https://twitter.com/BraLuks" target="_blank">
+                                    <i class="fa-brands fa-square-x-twitter"></i>
+                                    @BraLuks
+                                </a>
+                            </div>
+                            <form name="submit-to-google-sheet">
+                                <input
+                                    type="text"
+                                    name="Name"
+                                    placeholder="Your Name"
+                                    required
+                                >
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder="Your Email"
+                                    required
+                                >
+                                <textarea name="Message" rows="6" placeholder="Your Massage"></textarea>
+                                <button type="submit" class="btn btn2">Submit</button>
+                            </form>
+                            <div id="msg"></div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="copyright">
+                    Copyright
+                    <i class="fa-regular fa-copyright"></i>
+                    Luxolo Mdingi.
+                </footer>
             </div>
-          </div>
-        </div>
-        <a class="github-link" href="https://github.com/Lmdingi" target="_blank"
-          ><i class="fa-brands fa-square-github"></i>lmdingi</a
-        >
-      </div>
-    </div>
-
-    <!-------------------------------------------------------------- contacts -->
-    <div id="contacts">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <img class="side-img" src="images/contact-me.png"/>
-          </div>
-
-          <div class="contact-right">
-            <div class="social-icons">
-              <a
-                ><i class="fa-solid fa-square-envelope"></i
-                >lmdingi4@gmail.com</a
-              >
-              <a><i class="fa-solid fa-square-phone"></i>0746973745</a>
-              <a
-                href="https://www.linkedin.com/in/luxolo-mdingi-01a17b128"
-                target="_blank"
-                ><i class="fa-brands fa-linkedin"></i>Luxolo Mdingi</a
-              >
-              <a href="https://twitter.com/BraLuks" target="_blank"
-                ><i class="fa-brands fa-square-x-twitter"></i>@BraLuks</a
-              >
-            </div>
-
-            <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required />
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                required
-              />
-              <textarea
-                name="Message"
-                rows="6"
-                placeholder="Your Massage"
-              ></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <div id="msg"></div>
-          </div>
-        </div>
-
-      </div>
-          <footer class="copyright">
-            Copyright <i class="fa-regular fa-copyright"></i> Luxolo Mdingi.
-          </footer>      
-    </div>
-
-    <script src="main.js"></script>
-  </body>
-</html>
+            <script src="main.js"></script>
+        </body>
+    </html>
