@@ -38,7 +38,7 @@ body {
 }
 
 .container {
-  border: 1px red solid; /*RM*/
+  /* border: 1px red solid; RM */
   padding: 10px 10%;
   width: 100%;
   height: 100vh;
@@ -56,7 +56,7 @@ nav {
 /* start */
 /*********/
 .logo {
-  border: 1px red solid; /*RM*/
+  /* border: 1px red solid; RM */
   width: 140px;
 }
 
@@ -91,13 +91,13 @@ nav ul li a:hover:after {
 }
 
 .header-text {
-  border: 1px red solid; /*RM*/
+  /* border: 1px red solid; RM */
   margin-top: 10%;
   font-size: 97px;
 }
 
 .header-text h1 {
-  border: 1px red solid; /*RM*/
+  /* border: 1px red solid; RM */
   margin-top: 20px;
   font-size: 55px;
 }
@@ -107,7 +107,7 @@ nav ul li a:hover:after {
 }
 
 .img-home {
-  border: 1px red solid; /*RM*/
+  /* border: 1px red solid; RM */
   position: absolute;
   filter: grayscale(100%);
   height: 600px;
@@ -386,7 +386,6 @@ form .btn2 {
 #msg {
   /* background: green; */
   color: orange;
-  /* display: block; */
   text-align: center;
   height: 19px;
 }
@@ -409,16 +408,780 @@ nav .fa-solid {
 /* end */
 /*******/
 
+
+
+
+
 /********************************************************************/
-/* small screen ** small screen ** small screen ** small screen  575px */
+/* small screen ** small screen ** small screen ** small screen  1100px */
 /********************************************************************/
 /*********/
 /* start */
 /*********/
-@media only screen and (max-width: 314px) {
+@media only screen and (max-width: 1100px) {
   .img-home {
-    display: none;
-    height: 380px;
+    /* display: none; */
+    height: 500px;
+    /* right: 0px; */
+  }
+
+  .logo {
+    /* width: 100px; */
+  }
+
+  .header-text {
+    /* border: 1px solid red; */
+    /* margin-top: 20%; */
+    font-size: 50px;
+  }
+
+  .header-text h1 {
+    /* margin-top: 10px; */
+    font-size: 28px;
+  }
+
+  /* nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  } */
+
+  /* nav ul {
+    background: orange;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  } */
+
+  nav ul li {
+    /* display: block; */
+    /* margin: 5px; */
+    /* font-size: 12px; */
+  }
+
+  /* nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  } */
+
+  /* ******************************************************************** about */
+  /************************ about & contacts **********/
+  #about,
+  #contacts {
+    /* background: var(--color-white); */
+    /* color: var(--color-primary); */
+    /* padding: 0px 0px; */
+  }
+
+  #about .container,
+  #contacts .container {
+    /* border: 1px orange solid; */
+    /* padding: 10px; */
+  }
+
+  .row {
+    /* border: 1px orange solid; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+    /* position: relative; */
+  }
+
+  .about-col-1,
+  .contact-left {
+    /* border: 1px solid red; */
+    /* position: relative; */
+    /* flex-basis: 100%; */
+    /* height: 85px; */
+  }
+
+  .about-col-2,
+  .contact-right {
+    /* border: 1px solid red; */
+    /* position: relative; */
+    /* flex-basis: 100%; */
+    /* margin-top: 0px; */
+    padding: 0;
+    /* height: 450px; */
+    width: 100px;
+  }
+
+  .side-img {
+    /* position: absolute; */
+    /* left: 0px; */
+    /* top: 0px; */
+    width: 280px;
+    /* height: auto; */
+  }
+
+  /* ******** paragraph */
+  .quot {
+    /* border: 1px blue solid; */
+    padding: 0px;
+    font-size: 12px;
+    /* font-weight: normal; */
+  }
+
+  /************************ about & contacts **********/
+  .tab-titles {
+    /* border: 1px red solid; */
+    /* display: flex; */
+    margin: 20px 0 20px;
+  }
+
+  .tab-links {
+    /* border: 1px blue solid; */
+    margin-right: 30px;
+    /* font-size: 14px; */
+    /* font-weight: 500; */
+    /* cursor: pointer; */
+    /* position: relative; */
+  }
+
+  .tab-links::after {
+    /* content: ""; */
+    /* width: 0%; */
+    /* height: 3px; */
+    /* background: orange; */
+    /* position: absolute; */
+    /* left: 0; */
+    /* bottom: -8px; */
+    /* transition: 0.5s; */
+  }
+
+  .tab-links.active-link::after {
+    /* border: 1px solid red; */
+    /* width: 50%; */
+  }
+
+  .tab-contents ul li {
+    /* border: 1px blue solid; */
+    /* list-style: none; */
+    /* margin: 5px 0; */
+  }
+
+  .tab-contents ul li span {
+    /* color: orange; */
+    /* font-size: 14px; */
+  }
+
+  .tab-contents {
+    /* display: none; */
+  }
+
+  .tab-contents.active-tab {
+    /* display: block; */
+  }
+
+
+
+  /* ******** skills */
+  #skills ul li {
+    /* border: 1px blue solid; */
+    /* display: inline-block; */
+    /* width: 145px; */
+  }
+
+  #skills ul .rateBox {
+    /* border: 1px red solid; */
+    /* margin-right: 0px; */
+  }
+
+  #skills ul li span {
+    /* border: 1px green solid; */
+    /* display: inline-block; */
+    /* width: 50px; */
+    /* font-size: 14px; */
+  }
+
+  /****/
+  .rating {
+    /* display: inline-block; */
+    /* border: 1px orange solid; */
+    /* background-color: var(--color-primary); */
+    /* width: 10px; */
+    /* height: 10px; */
+    /* border-radius: 50%; */
+  }
+
+  .unrate {
+    /* background-color: var(--color-light-gray); */
+  }
+
+  /****/
+  /********* education */
+  #education ul li {
+    /* margin: 0px; */
+    font-size: 12px;
+    /* padding: 5px 0; */
+  }
+
+  /********* experience */
+  #experience .btn {
+    /* position: absolute; */
+    /* left: 0; */
+    /* margin-top: 10px; */
+    /* font-size: 12px; */
+    /* padding: 5px 10px; */
+  }
+
+  .btn {
+    /* display: block; */
+    /* margin: 20px auto; */
+    /* font-size: 16px; */
+    /* padding: 5px 10px; */
+    /* width: fit-content; */
+    /* border-radius: 6px; */
+    /* text-decoration: none; */
+    /* border: 1px var(--color-primary) solid; */
+    /* color: var(--color-primary); */
+    /* background-color: orange; */
+  }
+
+  .btn:hover {
+    /* border: 1px orange solid; */
+    /* color: var(--color-light-gray); */
+    /* background-color: var(--color-primary); */
+  }
+  /********************/
+  /********************************************** portfolio */
+  #portfolio .container {
+    /* border: 1px red solid; */
+    padding-top: 50px;
+  }
+  
+  .work-list {
+    /* border: 1px red solid; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(117px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+  
+  .work {
+    border: 3px rgba(255, 255, 255, 0.1) solid;
+    position: relative;
+    /* overflow: hidden; */
+  }
+  
+  .work img {
+    width: 100%;
+    display: block;
+  }
+  
+  .layer {
+    color: orange;
+    width: 100%;
+    top: -20px;
+    left: -5px;
+    position: absolute;
+    font-size: 10px;
+  }
+  
+  .construction {
+    position: absolute;
+    top: 5px;
+    scale: 0.8;
+  }
+  
+  #portfolio .container .github-link {
+    /* border: 1px red solid; */
+    position: absolute;
+    bottom: 100px;
+    text-decoration: none;
+    color: var(--color-light-gray);
+  }
+  
+  #portfolio .container .github-link i {
+    color: var(--color-light-gray);
+    margin-right: 10px;
+    font-size: 25px;
+    transition: transform 0.5s;
+  }
+  
+  #portfolio .container .github-link i:hover {
+    color: orange;
+    transform: translateY(-5px);
+  }
+
+  /******************************************************************** contacts */
+
+  .contact-right .social-icons a {
+    /* border: 1px solid red; */
+    margin: 5px 0;
+    color: var(--color-primary);
+    font-size: 12px;
+    text-decoration: none;
+    display: inline-block;
+    width: 190px;
+  }
+
+  .contact-right .social-icons a i {
+    color: var(--color-primary);
+    margin: 0px 5px 0px 0;
+    font-size: 25px;
+    transition: transform 0.5s;
+  }
+
+  .contact-right .social-icons a i:hover {
+    color: orange;
+    transform: translateY(-5px);
+  }
+
+  form {
+    /* border: 1px red solid; */
+    margin: 10px 0 0 0;
+    width: 100%;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: var(--color-light-gray);
+    padding: 5px;
+    margin: 3px 0;
+    color: var(--color-primary);
+    font-size: 12px;
+    border-radius: 6px;
+  }
+
+  form .btn2 {
+    padding: 5px 20px;
+    font-size: 14px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+  #msg {
+    /* background: green; */
+    color: orange;
+    text-align: center;
+    height: 19px;
+    font-size: smaller;
+  }
+
+  .copyright {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 3px;
+    background-color: var(--color-light-gray);
+    font-weight: 300;
+    font-size: 10px;
+    height: fit-content;
+  }
+}
+
+/*******/
+/* end */
+/*******/
+
+
+
+
+/********************************************************************/
+/* small screen ** small screen ** small screen ** small screen  799px */
+/********************************************************************/
+/*********/
+/* start */
+/*********/
+@media only screen and (max-width: 799px) {
+  .img-home {
+    /* display: none; */
+    height: 450px;
+    /* right: 0px; */
+  }
+
+  .logo {
+    /* width: 100px; */
+  }
+
+  .header-text {
+    /* border: 1px solid red; */
+    margin-top: 20%;
+    font-size: 40px;
+  }
+
+  .header-text h1 {
+    /* margin-top: 10px; */
+    font-size: 22px;
+  }
+
+  /* nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  } */
+
+  /* nav ul {
+    background: orange;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  } */
+
+  nav ul li {
+    /* display: block; */
+    margin: 5px;
+    font-size: 12px;
+  }
+
+  /* nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  } */
+
+  /* ******************************************************************** about */
+  /************************ about & contacts **********/
+  #about,
+  #contacts {
+    /* background: var(--color-white); */
+    /* color: var(--color-primary); */
+    /* padding: 0px 0px; */
+  }
+
+  #about .container,
+  #contacts .container {
+    /* border: 1px orange solid; */
+    /* padding: 10px; */
+  }
+
+  .row {
+    /* border: 1px orange solid; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+    /* position: relative; */
+  }
+
+  .about-col-1,
+  .contact-left {
+    /* border: 1px solid red; */
+    /* position: relative; */
+    /* flex-basis: 100%; */
+    /* height: 85px; */
+  }
+
+  .about-col-2,
+  .contact-right {
+    /* border: 1px solid red; */
+    /* position: relative; */
+    /* flex-basis: 100%; */
+    /* margin-top: 0px; */
+    padding: 0;
+    /* height: 450px; */
+    width: 100px;
+  }
+
+  .side-img {
+    /* position: absolute; */
+    /* left: 0px; */
+    /* top: 0px; */
+    width: 180px;
+    /* height: auto; */
+  }
+
+  /* ******** paragraph */
+  .quot {
+    /* border: 1px blue solid; */
+    padding: 0px;
+    font-size: 12px;
+    /* font-weight: normal; */
+  }
+
+  /************************ about & contacts **********/
+  .tab-titles {
+    /* border: 1px red solid; */
+    /* display: flex; */
+    margin: 20px 0 20px;
+  }
+
+  .tab-links {
+    /* border: 1px blue solid; */
+    margin-right: 30px;
+    /* font-size: 14px; */
+    /* font-weight: 500; */
+    /* cursor: pointer; */
+    /* position: relative; */
+  }
+
+  .tab-links::after {
+    /* content: ""; */
+    /* width: 0%; */
+    /* height: 3px; */
+    /* background: orange; */
+    /* position: absolute; */
+    /* left: 0; */
+    /* bottom: -8px; */
+    /* transition: 0.5s; */
+  }
+
+  .tab-links.active-link::after {
+    /* border: 1px solid red; */
+    /* width: 50%; */
+  }
+
+  .tab-contents ul li {
+    /* border: 1px blue solid; */
+    /* list-style: none; */
+    /* margin: 5px 0; */
+  }
+
+  .tab-contents ul li span {
+    /* color: orange; */
+    /* font-size: 14px; */
+  }
+
+  .tab-contents {
+    /* display: none; */
+  }
+
+  .tab-contents.active-tab {
+    /* display: block; */
+  }
+
+
+
+  /* ******** skills */
+  #skills ul li {
+    /* border: 1px blue solid; */
+    /* display: inline-block; */
+    /* width: 145px; */
+  }
+
+  #skills ul .rateBox {
+    /* border: 1px red solid; */
+    /* margin-right: 0px; */
+  }
+
+  #skills ul li span {
+    /* border: 1px green solid; */
+    /* display: inline-block; */
+    /* width: 50px; */
+    /* font-size: 14px; */
+  }
+
+  /****/
+  .rating {
+    /* display: inline-block; */
+    /* border: 1px orange solid; */
+    /* background-color: var(--color-primary); */
+    /* width: 10px; */
+    /* height: 10px; */
+    /* border-radius: 50%; */
+  }
+
+  .unrate {
+    /* background-color: var(--color-light-gray); */
+  }
+
+  /****/
+  /********* education */
+  #education ul li {
+    /* margin: 0px; */
+    font-size: 12px;
+    /* padding: 5px 0; */
+  }
+
+  /********* experience */
+  #experience .btn {
+    /* position: absolute; */
+    /* left: 0; */
+    /* margin-top: 10px; */
+    /* font-size: 12px; */
+    /* padding: 5px 10px; */
+  }
+
+  .btn {
+    /* display: block; */
+    /* margin: 20px auto; */
+    /* font-size: 16px; */
+    /* padding: 5px 10px; */
+    /* width: fit-content; */
+    /* border-radius: 6px; */
+    /* text-decoration: none; */
+    /* border: 1px var(--color-primary) solid; */
+    /* color: var(--color-primary); */
+    /* background-color: orange; */
+  }
+
+  .btn:hover {
+    /* border: 1px orange solid; */
+    /* color: var(--color-light-gray); */
+    /* background-color: var(--color-primary); */
+  }
+  /********************/
+  /********************************************** portfolio */
+  #portfolio .container {
+    /* border: 1px red solid; */
+    padding-top: 50px;
+  }
+  
+  .work-list {
+    /* border: 1px red solid; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(117px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+  
+  .work {
+    border: 3px rgba(255, 255, 255, 0.1) solid;
+    position: relative;
+    /* overflow: hidden; */
+  }
+  
+  .work img {
+    width: 100%;
+    display: block;
+  }
+  
+  .layer {
+    color: orange;
+    width: 100%;
+    top: -20px;
+    left: -5px;
+    position: absolute;
+    font-size: 10px;
+  }
+  
+  .construction {
+    position: absolute;
+    top: 5px;
+    scale: 0.8;
+  }
+  
+  #portfolio .container .github-link {
+    /* border: 1px red solid; */
+    position: absolute;
+    bottom: 100px;
+    text-decoration: none;
+    color: var(--color-light-gray);
+  }
+  
+  #portfolio .container .github-link i {
+    color: var(--color-light-gray);
+    margin-right: 10px;
+    font-size: 25px;
+    transition: transform 0.5s;
+  }
+  
+  #portfolio .container .github-link i:hover {
+    color: orange;
+    transform: translateY(-5px);
+  }
+
+  /******************************************************************** contacts */
+
+  .contact-right .social-icons a {
+    /* border: 1px solid red; */
+    margin: 5px 0;
+    color: var(--color-primary);
+    font-size: 12px;
+    text-decoration: none;
+    display: inline-block;
+    width: 180px;
+  }
+
+  .contact-right .social-icons a i {
+    color: var(--color-primary);
+    margin: 0px 5px 0px 0;
+    font-size: 25px;
+    transition: transform 0.5s;
+  }
+
+  .contact-right .social-icons a i:hover {
+    color: orange;
+    transform: translateY(-5px);
+  }
+
+  form {
+    /* border: 1px red solid; */
+    margin: 10px 0 0 0;
+    width: 100%;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: var(--color-light-gray);
+    padding: 5px;
+    margin: 3px 0;
+    color: var(--color-primary);
+    font-size: 12px;
+    border-radius: 6px;
+  }
+
+  form .btn2 {
+    padding: 5px 20px;
+    font-size: 14px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+  #msg {
+    /* background: green; */
+    color: orange;
+    text-align: center;
+    height: 19px;
+    font-size: smaller;
+  }
+
+  .copyright {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 3px;
+    background-color: var(--color-light-gray);
+    font-weight: 300;
+    font-size: 10px;
+    height: fit-content;
+  }
+}
+
+/*******/
+/* end */
+/*******/
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************************************************/
+/* small screen ** small screen ** small screen ** small screen  699px */
+/********************************************************************/
+/*********/
+/* start */
+/*********/
+@media only screen and (max-width: 699px) {
+  .img-home {
+    /* display: none; */
+    height: 350px;
     right: 0px;
   }
 
@@ -427,13 +1190,1173 @@ nav .fa-solid {
   }
 
   .header-text {
-    border: 1px solid red;
-    margin-top: 40%;
-    font-size: 30px;
+    /* border: 1px solid red; */
+    margin-top: 30%;
+    font-size: 40px;
   }
 
   .header-text h1 {
+    /* margin-top: 10px; */
+    font-size: 22px;
+  }
+
+  /* nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  } */
+
+  /* nav ul {
+    background: orange;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  } */
+
+  nav ul li {
+    /* display: block; */
+    margin: 5px;
+    font-size: 12px;
+  }
+
+  /* nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  } */
+
+  /* ******************************************************************** about */
+  /************************ about & contacts **********/
+  #about,
+  #contacts {
+    /* background: var(--color-white); */
+    /* color: var(--color-primary); */
+    /* padding: 0px 0px; */
+  }
+
+  #about .container,
+  #contacts .container {
+    /* border: 1px orange solid; */
+    /* padding: 10px; */
+  }
+
+  .row {
+    /* border: 1px orange solid; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+    /* position: relative; */
+  }
+
+  .about-col-1,
+  .contact-left {
+    /* border: 1px solid red; */
+    /* position: relative; */
+    /* flex-basis: 100%; */
+    /* height: 85px; */
+  }
+
+  .about-col-2,
+  .contact-right {
+    /* border: 1px solid red; */
+    /* position: relative; */
+    /* flex-basis: 100%; */
+    /* margin-top: 0px; */
+    padding: 0;
+    /* height: 450px; */
+    width: 100px;
+  }
+
+  .side-img {
+    /* position: absolute; */
+    /* left: 0px; */
+    /* top: 0px; */
+    width: 180px;
+    /* height: auto; */
+  }
+
+  /* ******** paragraph */
+  .quot {
+    /* border: 1px blue solid; */
+    padding: 0px;
+    font-size: 12px;
+    /* font-weight: normal; */
+  }
+
+  /************************ about & contacts **********/
+  .tab-titles {
+    /* border: 1px red solid; */
+    /* display: flex; */
+    margin: 20px 0 20px;
+  }
+
+  .tab-links {
+    /* border: 1px blue solid; */
+    margin-right: 30px;
+    /* font-size: 14px; */
+    /* font-weight: 500; */
+    /* cursor: pointer; */
+    /* position: relative; */
+  }
+
+  .tab-links::after {
+    /* content: ""; */
+    /* width: 0%; */
+    /* height: 3px; */
+    /* background: orange; */
+    /* position: absolute; */
+    /* left: 0; */
+    /* bottom: -8px; */
+    /* transition: 0.5s; */
+  }
+
+  .tab-links.active-link::after {
+    /* border: 1px solid red; */
+    /* width: 50%; */
+  }
+
+  .tab-contents ul li {
+    /* border: 1px blue solid; */
+    /* list-style: none; */
+    /* margin: 5px 0; */
+  }
+
+  .tab-contents ul li span {
+    /* color: orange; */
+    /* font-size: 14px; */
+  }
+
+  .tab-contents {
+    /* display: none; */
+  }
+
+  .tab-contents.active-tab {
+    /* display: block; */
+  }
+
+
+
+  /* ******** skills */
+  #skills ul li {
+    /* border: 1px blue solid; */
+    /* display: inline-block; */
+    /* width: 145px; */
+  }
+
+  #skills ul .rateBox {
+    /* border: 1px red solid; */
+    /* margin-right: 0px; */
+  }
+
+  #skills ul li span {
+    /* border: 1px green solid; */
+    /* display: inline-block; */
+    /* width: 50px; */
+    /* font-size: 14px; */
+  }
+
+  /****/
+  .rating {
+    /* display: inline-block; */
+    /* border: 1px orange solid; */
+    /* background-color: var(--color-primary); */
+    /* width: 10px; */
+    /* height: 10px; */
+    /* border-radius: 50%; */
+  }
+
+  .unrate {
+    /* background-color: var(--color-light-gray); */
+  }
+
+  /****/
+  /********* education */
+  #education ul li {
+    /* margin: 0px; */
+    font-size: 12px;
+    /* padding: 5px 0; */
+  }
+
+  /********* experience */
+  #experience .btn {
+    /* position: absolute; */
+    /* left: 0; */
+    /* margin-top: 10px; */
+    /* font-size: 12px; */
+    /* padding: 5px 10px; */
+  }
+
+  .btn {
+    /* display: block; */
+    /* margin: 20px auto; */
+    /* font-size: 16px; */
+    /* padding: 5px 10px; */
+    /* width: fit-content; */
+    /* border-radius: 6px; */
+    /* text-decoration: none; */
+    /* border: 1px var(--color-primary) solid; */
+    /* color: var(--color-primary); */
+    /* background-color: orange; */
+  }
+
+  .btn:hover {
+    /* border: 1px orange solid; */
+    /* color: var(--color-light-gray); */
+    /* background-color: var(--color-primary); */
+  }
+  /********************/
+  /********************************************** portfolio */
+  #portfolio .container {
+    /* border: 1px red solid; */
+    padding-top: 50px;
+  }
+  
+  .work-list {
+    /* border: 1px red solid; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(117px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+  
+  .work {
+    border: 3px rgba(255, 255, 255, 0.1) solid;
+    position: relative;
+    /* overflow: hidden; */
+  }
+  
+  .work img {
+    width: 100%;
+    display: block;
+  }
+  
+  .layer {
+    color: orange;
+    width: 100%;
+    top: -20px;
+    left: -5px;
+    position: absolute;
+    font-size: 10px;
+  }
+  
+  .construction {
+    position: absolute;
+    top: 5px;
+    scale: 0.8;
+  }
+  
+  #portfolio .container .github-link {
+    /* border: 1px red solid; */
+    position: absolute;
+    bottom: 100px;
+    text-decoration: none;
+    color: var(--color-light-gray);
+  }
+  
+  #portfolio .container .github-link i {
+    color: var(--color-light-gray);
+    margin-right: 10px;
+    font-size: 25px;
+    transition: transform 0.5s;
+  }
+  
+  #portfolio .container .github-link i:hover {
+    color: orange;
+    transform: translateY(-5px);
+  }
+
+  /******************************************************************** contacts */
+
+  .contact-right .social-icons a {
+    /* border: 1px solid red; */
+    margin: 5px 0;
+    color: var(--color-primary);
+    font-size: 12px;
+    text-decoration: none;
+    display: inline-block;
+    width: 180px;
+  }
+
+  .contact-right .social-icons a i {
+    color: var(--color-primary);
+    margin: 0px 5px 0px 0;
+    font-size: 25px;
+    transition: transform 0.5s;
+  }
+
+  .contact-right .social-icons a i:hover {
+    color: orange;
+    transform: translateY(-5px);
+  }
+
+  form {
+    /* border: 1px red solid; */
+    margin: 10px 0 0 0;
+    width: 100%;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: var(--color-light-gray);
+    padding: 5px;
+    margin: 3px 0;
+    color: var(--color-primary);
+    font-size: 12px;
+    border-radius: 6px;
+  }
+
+  form .btn2 {
+    padding: 5px 20px;
+    font-size: 14px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+  #msg {
+    /* background: green; */
+    color: orange;
+    text-align: center;
+    height: 19px;
+    font-size: smaller;
+  }
+
+  .copyright {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 3px;
+    background-color: var(--color-light-gray);
+    font-weight: 300;
+    font-size: 10px;
+    height: fit-content;
+  }
+}
+
+/*******/
+/* end */
+/*******/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************************************************/
+/* small screen ** small screen ** small screen ** small screen  574px */
+/********************************************************************/
+/*********/
+/* start */
+/*********/
+@media only screen and (max-width: 574px) {
+  .img-home {
+    /* display: none; */
+    height: 300px;
+    right: 0px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .header-text {
+    /* border: 1px solid red; */
+    /* margin-top: 10%; */
+    font-size: 40px;
+  }
+
+  .header-text h1 {
+    /* margin-top: 10px; */
+    font-size: 22px;
+  }
+
+  /* nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  } */
+
+  /* nav ul {
+    background: orange;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  } */
+
+  nav ul li {
+    /* display: block; */
+    margin: 5px;
+    font-size: 12px;
+  }
+
+  /* nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  } */
+
+  /* ******************************************************************** about */
+  /************************ about & contacts **********/
+  #about,
+  #contacts {
+    background: var(--color-white);
+    color: var(--color-primary);
+    padding: 0px 0px;
+  }
+
+  #about .container,
+  #contacts .container {
+    /* border: 1px orange solid; */
+    padding: 10px;
+  }
+
+  .row {
+    /* border: 1px orange solid; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .about-col-1,
+  .contact-left {
+    /* border: 1px solid red; */
+    position: relative;
+    flex-basis: 100%;
+    height: 85px;
+  }
+
+  .about-col-2,
+  .contact-right {
+    /* border: 1px solid red; */
+    position: relative;
+    flex-basis: 100%;
+    margin-top: 0px;
+    padding: 0;
+    height: 450px;
+    /* width: 100px; */
+  }
+
+  .side-img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 80px;
+    height: auto;
+  }
+
+  /* ******** paragraph */
+  .quot {
+    /* border: 1px blue solid; */
+    padding-top: 0px;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  /************************ about & contacts **********/
+  .tab-titles {
+    /* border: 1px red solid; */
+    display: flex;
+    margin: 20px 0 20px;
+  }
+
+  .tab-links {
+    /* border: 1px blue solid; */
+    margin-right: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .tab-links::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: orange;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+  }
+
+  .tab-links.active-link::after {
+    /* border: 1px solid red; */
+    width: 50%;
+  }
+
+  .tab-contents ul li {
+    /* border: 1px blue solid; */
+    list-style: none;
+    margin: 5px 0;
+  }
+
+  .tab-contents ul li span {
+    color: orange;
+    font-size: 14px;
+  }
+
+  .tab-contents {
+    display: none;
+  }
+
+  .tab-contents.active-tab {
+    display: block;
+  }
+
+
+
+  /* ******** skills */
+  #skills ul li {
+    /* border: 1px blue solid; */
+    display: inline-block;
+    width: 145px;
+  }
+
+  #skills ul .rateBox {
+    /* border: 1px red solid; */
+    margin-right: 0px;
+  }
+
+  #skills ul li span {
+    /* border: 1px green solid; */
+    display: inline-block;
+    width: 50px;
+    font-size: 14px;
+  }
+
+  /****/
+  .rating {
+    display: inline-block;
+    /* border: 1px orange solid; */
+    background-color: var(--color-primary);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+  .unrate {
+    background-color: var(--color-light-gray);
+  }
+
+  /****/
+  /********* education */
+  #education ul li {
+    margin: 0px;
+    font-size: 12px;
+    padding: 5px 0;
+  }
+
+  /********* experience */
+  #experience .btn {
+    position: absolute;
+    left: 0;
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .btn {
+    display: block;
+    margin: 20px auto;
+    font-size: 16px;
+    padding: 5px 10px;
+    width: fit-content;
+    border-radius: 6px;
+    text-decoration: none;
+    border: 1px var(--color-primary) solid;
+    color: var(--color-primary);
+    background-color: orange;
+  }
+
+  .btn:hover {
+    /* border: 1px orange solid; */
+    color: var(--color-light-gray);
+    background-color: var(--color-primary);
+  }
+  /********************/
+  /********************************************** portfolio */
+  #portfolio .container {
+    /* border: 1px red solid; */
+    padding-top: 50px;
+  }
+  
+  .work-list {
+    /* border: 1px red solid; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(117px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+  
+  .work {
+    border: 3px rgba(255, 255, 255, 0.1) solid;
+    position: relative;
+    /* overflow: hidden; */
+  }
+  
+  .work img {
+    width: 100%;
+    display: block;
+  }
+  
+  .layer {
+    color: orange;
+    width: 100%;
+    top: -20px;
+    left: -5px;
+    position: absolute;
+    font-size: 10px;
+  }
+  
+  .construction {
+    position: absolute;
+    top: 5px;
+    scale: 0.8;
+  }
+  
+  #portfolio .container .github-link {
+    /* border: 1px red solid; */
+    position: absolute;
+    bottom: 100px;
+    text-decoration: none;
+    color: var(--color-light-gray);
+  }
+  
+  #portfolio .container .github-link i {
+    color: var(--color-light-gray);
+    margin-right: 10px;
+    font-size: 25px;
+    transition: transform 0.5s;
+  }
+  
+  #portfolio .container .github-link i:hover {
+    color: orange;
+    transform: translateY(-5px);
+  }
+
+  /******************************************************************** contacts */
+
+  .contact-right .social-icons a {
+    /* border: 1px solid red; */
+    /* margin: 5px 0; */
+    /* color: var(--color-primary); */
+    /* font-size: 12px; */
+    /* text-decoration: none; */
+    /* display: inline-block; */
+    width: 190px;
+  }
+
+  .contact-right .social-icons a i {
+    color: var(--color-primary);
+    margin: 0px 5px 0px 0;
+    font-size: 25px;
+    transition: transform 0.5s;
+  }
+
+  .contact-right .social-icons a i:hover {
+    color: orange;
+    transform: translateY(-5px);
+  }
+
+  form {
+    /* border: 1px red solid; */
+    margin: 10px 0 0 0;
+    width: 100%;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: var(--color-light-gray);
+    padding: 5px;
+    margin: 3px 0;
+    color: var(--color-primary);
+    font-size: 12px;
+    border-radius: 6px;
+  }
+
+  form .btn2 {
+    padding: 5px 20px;
+    font-size: 14px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+  #msg {
+    /* background: green; */
+    color: orange;
+    text-align: center;
+    height: 19px;
+    font-size: smaller;
+  }
+
+  .copyright {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 3px;
+    background-color: var(--color-light-gray);
+    font-weight: 300;
+    font-size: 10px;
+    height: fit-content;
+  }
+}
+
+/*******/
+/* end */
+/*******/
+
+
+
+
+
+
+
+
+
+/********************************************************************/
+/* small screen ** small screen ** small screen ** small screen  539px */
+/********************************************************************/
+/*********/
+/* start */
+/*********/
+@media only screen and (max-width: 539px) {
+  .img-home {
+    /* display: none; */
+    height: 300px;
+    right: 0px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .header-text {
+    /* border: 1px solid red; */
+    margin-top: 10%;
+    font-size: 40px;
+  }
+
+  .header-text h1 {
+    margin-top: 10px;
+    font-size: 22px;
+  }
+
+  nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+
+  nav ul {
+    background: orange;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  /* ******************************************************************** about */
+  /************************ about & contacts **********/
+  #about,
+  #contacts {
+    background: var(--color-white);
+    color: var(--color-primary);
+    padding: 0px 0px;
+  }
+
+  #about .container,
+  #contacts .container {
+    /* border: 1px orange solid; */
+    padding: 10px;
+  }
+
+  .row {
+    /* border: 1px orange solid; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .about-col-1,
+  .contact-left {
+    /* border: 1px solid red; */
+    position: relative;
+    flex-basis: 100%;
+    height: 85px;
+  }
+
+  .about-col-2,
+  .contact-right {
+    /* border: 1px solid red; */
+    position: relative;
+    flex-basis: 100%;
+    margin-top: 0px;
+    padding: 0;
+    height: 450px;
+    /* width: 100px; */
+  }
+
+  .side-img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 80px;
+    height: auto;
+  }
+
+  /* ******** paragraph */
+  .quot {
+    /* border: 1px blue solid; */
+    padding-top: 0px;
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  /************************ about & contacts **********/
+  .tab-titles {
+    /* border: 1px red solid; */
+    display: flex;
+    margin: 20px 0 20px;
+  }
+
+  .tab-links {
+    /* border: 1px blue solid; */
+    margin-right: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .tab-links::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: orange;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+  }
+
+  .tab-links.active-link::after {
+    /* border: 1px solid red; */
+    width: 50%;
+  }
+
+  .tab-contents ul li {
+    /* border: 1px blue solid; */
+    list-style: none;
+    margin: 5px 0;
+  }
+
+  .tab-contents ul li span {
+    color: orange;
+    font-size: 14px;
+  }
+
+  .tab-contents {
+    display: none;
+  }
+
+  .tab-contents.active-tab {
+    display: block;
+  }
+
+
+
+  /* ******** skills */
+  #skills ul li {
+    /* border: 1px blue solid; */
+    display: inline-block;
+    width: 145px;
+  }
+
+  #skills ul .rateBox {
+    /* border: 1px red solid; */
+    margin-right: 0px;
+  }
+
+  #skills ul li span {
+    /* border: 1px green solid; */
+    display: inline-block;
+    width: 50px;
+    font-size: 12px;
+  }
+
+  /****/
+  .rating {
+    display: inline-block;
+    /* border: 1px orange solid; */
+    background-color: var(--color-primary);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+  .unrate {
+    background-color: var(--color-light-gray);
+  }
+
+  /****/
+  /********* education */
+  #education ul li {
+    margin: 0px;
+    font-size: 10px;
+    padding: 5px 0;
+  }
+
+  /********* experience */
+  #experience .btn {
+    position: absolute;
+    left: 0;
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .btn {
+    display: block;
+    margin: 20px auto;
+    font-size: 16px;
+    padding: 5px 10px;
+    width: fit-content;
+    border-radius: 6px;
+    text-decoration: none;
+    border: 1px var(--color-primary) solid;
+    color: var(--color-primary);
+    background-color: orange;
+  }
+
+  .btn:hover {
+    /* border: 1px orange solid; */
+    color: var(--color-light-gray);
+    background-color: var(--color-primary);
+  }
+  /********************/
+  /********************************************** portfolio */
+  #portfolio {
+    /* border: 1px red solid; */
+    padding: 0;
+    height: 100vh;
+  }
+
+  #portfolio .container h1 {
+    /* border: 1px red solid; */
+    padding-top: 0px;
+    font-size: 25px;
+  }
+
+  .work-list {
+    /* border: 1px red solid; */
+    display: block;
+    /* grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); */
+    /* grid-gap: 40px; */
     margin-top: 20px;
+  }
+
+  .work {
+    border: 3px rgba(255, 255, 255, 0.1) solid;
+    position: relative;
+    /* overflow: hidden; */
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+
+  .work img {
+    display: block;
+    width: 100px;
+  }
+
+  .layer {
+    /* border: 1px red solid; */
+    color: orange;
+    width: max-content;
+    position: absolute;
+    top: 40px;
+    left: 110px;
+    font-size: small;
+  }
+
+  .layer h3 {
+    /* border: 1px red solid; */
+    font-size: 10px;
+  }
+
+  .construction {
+    position: absolute;
+    top: 10px;
+    scale: 0.8;
+  }
+
+  #portfolio .container .github-link {
+    /* border: 1px red solid; */
+    position: absolute;
+    bottom: 30px;
+    text-decoration: none;
+    color: var(--color-light-gray);
+    font-size: 10px;
+  }
+
+  #portfolio .container .github-link i {
+    color: var(--color-light-gray);
+    margin-right: 5px;
+    font-size: 20px;
+    transition: transform 0.5s;
+  }
+
+  #portfolio .container .github-link i:hover {
+    color: orange;
+    transform: translateY(-5px);
+  }
+
+  /******************************************************************** contacts */
+
+  .contact-right .social-icons a {
+    /* border: 1px solid red; */
+    /* margin: 5px 0; */
+    /* color: var(--color-primary); */
+    /* font-size: 12px; */
+    /* text-decoration: none; */
+    /* display: inline-block; */
+    /* width: 180px; */
+  }
+
+  .contact-right .social-icons a i {
+    color: var(--color-primary);
+    margin: 0px 5px 0px 0;
+    font-size: 25px;
+    transition: transform 0.5s;
+  }
+
+  .contact-right .social-icons a i:hover {
+    color: orange;
+    transform: translateY(-5px);
+  }
+
+  form {
+    /* border: 1px red solid; */
+    margin: 10px 0 0 0;
+    width: 100%;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: var(--color-light-gray);
+    padding: 5px;
+    margin: 3px 0;
+    color: var(--color-primary);
+    font-size: 12px;
+    border-radius: 6px;
+  }
+
+  form .btn2 {
+    padding: 5px 20px;
+    font-size: 14px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+  #msg {
+    /* background: green; */
+    color: orange;
+    text-align: center;
+    height: 19px;
+    font-size: smaller;
+  }
+
+  .copyright {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 3px;
+    background-color: var(--color-light-gray);
+    font-weight: 300;
+    font-size: 10px;
+    height: fit-content;
+  }
+}
+
+/*******/
+/* end */
+/*******/
+
+
+
+
+/********************************************************************/
+/* small screen ** small screen ** small screen ** small screen  399px */
+/********************************************************************/
+/*********/
+/* start */
+/*********/
+@media only screen and (max-width: 399px) {
+  .img-home {
+    /* display: none; */
+    height: 300px;
+    right: 0px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .header-text {
+    /* border: 1px solid red; */
+    /* margin-top: 2%; */
+    font-size: 25px;
+  }
+
+  .header-text h1 {
+    margin-top: 10px;
     font-size: 20px;
   }
 
@@ -477,12 +2400,12 @@ nav .fa-solid {
 
   #about .container,
   #contacts .container {
-    border: 1px orange solid;
+    /* border: 1px orange solid; */
     padding: 10px;
   }
 
   .row {
-    border: 1px orange solid;
+    /* border: 1px orange solid; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -491,21 +2414,21 @@ nav .fa-solid {
 
   .about-col-1,
   .contact-left {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: relative;
     flex-basis: 100%;
-    height: 102px;
+    height: 85px;
   }
 
   .about-col-2,
   .contact-right {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: relative;
     flex-basis: 100%;
     margin-top: 0px;
     padding: 0;
-    height: 350px;
-    width: 100px;
+    height: 450px;
+    /* width: 100px; */
   }
 
   .side-img {
@@ -516,17 +2439,25 @@ nav .fa-solid {
     height: auto;
   }
 
+  /* ******** paragraph */
+  .quot {
+    /* border: 1px blue solid; */
+    padding-top: 0px;
+    font-size: 12px;
+    font-weight: normal;
+  }
+
   /************************ about & contacts **********/
   .tab-titles {
-    border: 1px red solid;
+    /* border: 1px red solid; */
     display: flex;
     margin: 20px 0 20px;
   }
 
   .tab-links {
-    border: 1px blue solid;
-    margin-right: 10px;
-    font-size: 10px;
+    /* border: 1px blue solid; */
+    margin-right: 30px;
+    font-size: 14px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -536,7 +2467,7 @@ nav .fa-solid {
     content: "";
     width: 0%;
     height: 3px;
-    backgroun: orange;
+    background: orange;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -544,12 +2475,12 @@ nav .fa-solid {
   }
 
   .tab-links.active-link::after {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 50%;
   }
 
   .tab-contents ul li {
-    border: 1px blue solid;
+    /* border: 1px blue solid; */
     list-style: none;
     margin: 5px 0;
   }
@@ -567,29 +2498,22 @@ nav .fa-solid {
     display: block;
   }
 
-  ******** paragraph
-  .quot {
-    border: 1px blue solid;
-    padding-top: 0px;
-    font-size: 8px;
-    font-weight: normal;
-  }
+
 
   /* ******** skills */
   #skills ul li {
-    border: 1px blue solid;
+    /* border: 1px blue solid; */
     display: inline-block;
     width: 145px;
-    border: 1px solid blue;
   }
 
   #skills ul .rateBox {
-    border: 1px red solid;
+    /* border: 1px red solid; */
     margin-right: 0px;
   }
 
   #skills ul li span {
-    border: 1px green solid;
+    /* border: 1px green solid; */
     display: inline-block;
     width: 50px;
     font-size: 12px;
@@ -598,7 +2522,7 @@ nav .fa-solid {
   /****/
   .rating {
     display: inline-block;
-    border: 1px orange solid;
+    /* border: 1px orange solid; */
     background-color: var(--color-primary);
     width: 10px;
     height: 10px;
@@ -613,8 +2537,8 @@ nav .fa-solid {
   /********* education */
   #education ul li {
     margin: 0px;
-    font-size: 12px;
-    padding: 5px 10px;
+    font-size: 10px;
+    padding: 5px 0;
   }
 
   /********* experience */
@@ -640,37 +2564,36 @@ nav .fa-solid {
   }
 
   .btn:hover {
-    border: 1px orange solid;
+    /* border: 1px orange solid; */
     color: var(--color-light-gray);
     background-color: var(--color-primary);
   }
   /********************/
   /********************************************** portfolio */
   #portfolio {
-    border: 1px red solid;
+    /* border: 1px red solid; */
     padding: 0;
     height: 100vh;
   }
 
   #portfolio .container h1 {
-    border: 1px red solid;
-    padding-top: 50px;
+    /* border: 1px red solid; */
+    padding-top: 0px;
     font-size: 25px;
   }
 
   .work-list {
-    border: 1px red solid;
+    /* border: 1px red solid; */
     display: block;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    grid-gap: 40px;
+    /* grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); */
+    /* grid-gap: 40px; */
     margin-top: 20px;
   }
 
   .work {
-    border: 1px red solid;
     border: 3px rgba(255, 255, 255, 0.1) solid;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 100%;
     margin: 30px 0 0 0;
   }
@@ -681,16 +2604,17 @@ nav .fa-solid {
   }
 
   .layer {
-    border: 1px red solid;
+    /* border: 1px red solid; */
     color: orange;
     width: max-content;
     position: absolute;
-    top: -20px;
-    left: 5px;
+    top: 40px;
+    left: 110px;
     font-size: small;
   }
 
   .layer h3 {
+    /* border: 1px red solid; */
     font-size: 10px;
   }
 
@@ -701,17 +2625,18 @@ nav .fa-solid {
   }
 
   #portfolio .container .github-link {
-    border: 1px red solid;
+    /* border: 1px red solid; */
     position: absolute;
-    bottom: -55px;
+    bottom: 30px;
     text-decoration: none;
     color: var(--color-light-gray);
+    font-size: 10px;
   }
 
   #portfolio .container .github-link i {
     color: var(--color-light-gray);
-    margin-right: 10px;
-    font-size: 25px;
+    margin-right: 5px;
+    font-size: 20px;
     transition: transform 0.5s;
   }
 
@@ -723,13 +2648,13 @@ nav .fa-solid {
   /******************************************************************** contacts */
 
   .contact-right .social-icons a {
-    border: 1px solid red;
-    margin-right: 5px;
-    color: var(--color-primary);
-    font-size: 12px;
-    text-decoration: none;
-    display: inline-block;
-    width: 180px;
+    /* border: 1px solid red; */
+    /* margin: 5px 0; */
+    /* color: var(--color-primary); */
+    /* font-size: 12px; */
+    /* text-decoration: none; */
+    /* display: inline-block; */
+    /* width: 180px; */
   }
 
   .contact-right .social-icons a i {
@@ -745,7 +2670,7 @@ nav .fa-solid {
   }
 
   form {
-    border: 1px red solid;
+    /* border: 1px red solid; */
     margin: 10px 0 0 0;
     width: 100%;
   }
@@ -771,9 +2696,401 @@ nav .fa-solid {
   }
 
   #msg {
-    background: green;
+    /* background: green; */
     color: orange;
+    text-align: center;
+    height: 19px;
+    font-size: smaller;
+  }
+
+  .copyright {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 3px;
+    background-color: var(--color-light-gray);
+    font-weight: 300;
+    font-size: 10px;
+    height: fit-content;
+  }
+}
+
+/*******/
+/* end */
+/*******/
+
+
+
+
+
+
+/********************************************************************/
+/* small screen ** small screen ** small screen ** small screen  299px */
+/********************************************************************/
+/*********/
+/* start */
+/*********/
+@media only screen and (max-width: 299px) {
+  .img-home {
+    /* display: none; */
+    height: 300px;
+    right: 0px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .header-text {
+    /* border: 1px solid red; */
+    margin-top: 2%;
+    font-size: 25px;
+  }
+
+  .header-text h1 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  nav .fa-solid {
     display: block;
+    font-size: 25px;
+  }
+
+  nav ul {
+    background: orange;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  /* ******************************************************************** about */
+  /************************ about & contacts **********/
+  #about,
+  #contacts {
+    background: var(--color-white);
+    color: var(--color-primary);
+    padding: 0px 0px;
+  }
+
+  #about .container,
+  #contacts .container {
+    /* border: 1px orange solid; */
+    padding: 10px;
+  }
+
+  .row {
+    /* border: 1px orange solid; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .about-col-1,
+  .contact-left {
+    /* border: 1px solid red; */
+    position: relative;
+    flex-basis: 100%;
+    height: 85px;
+  }
+
+  .about-col-2,
+  .contact-right {
+    /* border: 1px solid red; */
+    position: relative;
+    flex-basis: 100%;
+    margin-top: 0px;
+    padding: 0;
+    height: 450px;
+    /* width: 100px; */
+  }
+
+  .side-img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 80px;
+    height: auto;
+  }
+
+  /* ******** paragraph */
+  .quot {
+    /* border: 1px blue solid; */
+    padding-top: 0px;
+    font-size: 10px;
+    font-weight: normal;
+  }
+
+  /************************ about & contacts **********/
+  .tab-titles {
+    /* border: 1px red solid; */
+    display: flex;
+    margin: 20px 0 20px;
+  }
+
+  .tab-links {
+    /* border: 1px blue solid; */
+    margin-right: 10px;
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .tab-links::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: orange;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+  }
+
+  .tab-links.active-link::after {
+    /* border: 1px solid red; */
+    width: 50%;
+  }
+
+  .tab-contents ul li {
+    /* border: 1px blue solid; */
+    list-style: none;
+    margin: 5px 0;
+  }
+
+  .tab-contents ul li span {
+    color: orange;
+    font-size: 14px;
+  }
+
+  .tab-contents {
+    display: none;
+  }
+
+  .tab-contents.active-tab {
+    display: block;
+  }
+
+
+
+  /* ******** skills */
+  #skills ul li {
+    /* border: 1px blue solid; */
+    display: inline-block;
+    width: 145px;
+  }
+
+  #skills ul .rateBox {
+    /* border: 1px red solid; */
+    margin-right: 0px;
+  }
+
+  #skills ul li span {
+    /* border: 1px green solid; */
+    display: inline-block;
+    width: 50px;
+    font-size: 12px;
+  }
+
+  /****/
+  .rating {
+    display: inline-block;
+    /* border: 1px orange solid; */
+    background-color: var(--color-primary);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+  .unrate {
+    background-color: var(--color-light-gray);
+  }
+
+  /****/
+  /********* education */
+  #education ul li {
+    margin: 0px;
+    font-size: 10px;
+    padding: 5px 0px;
+  }
+
+  /********* experience */
+  #experience .btn {
+    position: absolute;
+    left: 0;
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .btn {
+    display: block;
+    margin: 20px auto;
+    font-size: 16px;
+    padding: 5px 10px;
+    width: fit-content;
+    border-radius: 6px;
+    text-decoration: none;
+    border: 1px var(--color-primary) solid;
+    color: var(--color-primary);
+    background-color: orange;
+  }
+
+  .btn:hover {
+    /* border: 1px orange solid; */
+    color: var(--color-light-gray);
+    background-color: var(--color-primary);
+  }
+  /********************/
+  /********************************************** portfolio */
+  #portfolio {
+    /* border: 1px red solid; */
+    padding: 0;
+    height: 100vh;
+  }
+
+  #portfolio .container h1 {
+    /* border: 1px red solid; */
+    padding-top: 0px;
+    font-size: 25px;
+  }
+
+  .work-list {
+    /* border: 1px red solid; */
+    display: block;
+    /* grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); */
+    /* grid-gap: 40px; */
+    margin-top: 20px;
+  }
+
+  .work {
+    border: 3px rgba(255, 255, 255, 0.1) solid;
+    position: relative;
+    /* overflow: hidden; */
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+
+  .work img {
+    display: block;
+    width: 100px;
+  }
+
+  .layer {
+    /* border: 1px red solid; */
+    color: orange;
+    width: max-content;
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    font-size: small;
+  }
+
+  .layer h3 {
+    /* border: 1px red solid; */
+    font-size: 10px;
+  }
+
+  .construction {
+    position: absolute;
+    top: 10px;
+    scale: 0.8;
+  }
+
+  #portfolio .container .github-link {
+    /* border: 1px red solid; */
+    position: absolute;
+    bottom: 30px;
+    text-decoration: none;
+    color: var(--color-light-gray);
+    font-size: 10px;
+  }
+
+  #portfolio .container .github-link i {
+    color: var(--color-light-gray);
+    margin-right: 5px;
+    font-size: 20px;
+    transition: transform 0.5s;
+  }
+
+  #portfolio .container .github-link i:hover {
+    color: orange;
+    transform: translateY(-5px);
+  }
+
+  /******************************************************************** contacts */
+
+  .contact-right .social-icons a {
+    /* border: 1px solid red; */
+    /* margin: 5px 0; */
+    /* color: var(--color-primary); */
+    /* font-size: 12px; */
+    /* text-decoration: none; */
+    /* display: inline-block; */
+    /* width: 180px; */
+  }
+
+  .contact-right .social-icons a i {
+    color: var(--color-primary);
+    margin: 0px 5px 0px 0;
+    font-size: 25px;
+    transition: transform 0.5s;
+  }
+
+  .contact-right .social-icons a i:hover {
+    color: orange;
+    transform: translateY(-5px);
+  }
+
+  form {
+    /* border: 1px red solid; */
+    margin: 10px 0 0 0;
+    width: 100%;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: var(--color-light-gray);
+    padding: 5px;
+    margin: 3px 0;
+    color: var(--color-primary);
+    font-size: 12px;
+    border-radius: 6px;
+  }
+
+  form .btn2 {
+    padding: 5px 20px;
+    font-size: 14px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+  #msg {
+    /* background: green; */
+    color: orange;
     text-align: center;
     height: 19px;
     font-size: smaller;
