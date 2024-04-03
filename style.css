@@ -125,7 +125,7 @@ nav ul li a:hover:after {
 }
 
 /* ******************************************************** about */
-/************************ about & contacts **********/
+/************************************* about & contacts **********/
 #about,
 #contacts {
   background: var(--color-white);
