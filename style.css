@@ -919,7 +919,7 @@ nav .fa-solid {
   .quot {
     /* border: 1px blue solid; */
     /* padding: 0px; */
-    font-size: 16px;
+    font-size: 14px;
     /* font-weight: normal; */
   }
 
@@ -927,13 +927,13 @@ nav .fa-solid {
   .tab-titles {
     /* border: 1px red solid; */
     /* display: flex; */
-    /* margin: 20px 0 20px; */
+    margin: 10px 0 10px;
   }
 
   .tab-links {
     /* border: 1px blue solid; */
     /* margin-right: 30px; */
-    /* font-size: 20px; */
+    font-size: 18px;
     /* font-weight: 500; */
     /* cursor: pointer; */
     /* position: relative; */
@@ -990,7 +990,7 @@ nav .fa-solid {
     /* border: 1px green solid; */
     /* display: inline-block; */
     /* width: 50px; */
-    /* font-size: 14px; */
+    font-size: 18px;
   }
 
   /****/
@@ -1011,7 +1011,7 @@ nav .fa-solid {
   /********* education */
   #education ul li {
     /* margin: 0px; */
-    /* font-size: 12px; */
+    font-size: 16px;
     /* padding: 5px 0; */
   }
 
