@@ -1234,7 +1234,7 @@ nav .fa-solid {
   #sideMenu {
     /* border: 1px red solid; */
     /* position: fixed; */
-    right: 0px;
+    right: -450px;
     top: 0px;
     /* z-index: 1; */
   }
