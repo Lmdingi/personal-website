@@ -16,12 +16,23 @@ function openTab(tabName) {
 /******************************************************************* sideMenu */
 let sideMenu = document.getElementById("sideMenu");
 
+// Get the body element
+let body = document.body;
+
+// Get the width of the body element
+// var bodyWidth = body.clientWidth;
+
+// // Log the width to the console
+// console.log("Body width:", bodyWidth);
+
 function openMenu() {
   sideMenu.style.right = "0";
 }
 
 function closeMenu() {
-  sideMenu.style.right = "-450px";
+  if (body.clientWidth <= 940) {
+    sideMenu.style.right = "-450px";
+  }
 }
 
 /********************************************************** google sheet data */
