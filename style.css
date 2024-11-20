@@ -3,7 +3,8 @@
   padding: 0;
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
-  list-style: none; /*ME*/
+  list-style: none;
+  /*ME*/
 }
 
 :root {
@@ -19,6 +20,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 /* ******************************************************** body */
 body {
   background: var(--color-primary);
@@ -60,12 +62,20 @@ nav {
   top: 10px;
   z-index: 1;
 }
+
 /*********/
 /* start */
 /*********/
 .logo {
   /* border: 1px red solid; RM */
   width: 140px;
+}
+
+.ulskilss {
+  /* border: 1px red solid; */
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: var(--color-light-gray);
 }
 
 nav ul li {
@@ -167,6 +177,7 @@ nav ul li a:hover:after {
   width: 300px;
   height: auto;
 }
+
 /************************ about & contacts **********/
 .tab-titles {
   /* border: 1px red solid; */
@@ -224,21 +235,29 @@ nav ul li a:hover:after {
   font-size: 16px;
   font-weight: normal;
 }
+
 /********* skills */
 #skills ul li {
   /* border: 1px blue solid; */
   display: inline-block;
-  width: 300px;
+  /* width: 300px; */
 }
+
 #skills ul .rateBox {
   /* border: 1px red solid; */
   /* margin-right: 10px; */
 }
 
 #skills ul li span {
+  background-color: var(--color-primary);
+  text-align: center;
+  font-size: 14px;
   /* border: 1px green solid; */
+  border-radius: 15px;
   display: inline-block;
-  width: 85px;
+  width: 100px;
+  padding: 5px 2px;
+  margin: 2px;
 }
 
 /****/
@@ -254,20 +273,15 @@ nav ul li a:hover:after {
 .unrate {
   background-color: var(--color-light-gray);
 }
+
 /****/
 /********* education */
 #education ul li {
   font-size: 18px;
 }
-/********* experience */
-#experience .btn {
-  position: absolute;
-  left: 0;
-}
 
-.btn {
-  display: block;
-  margin: 20px auto;
+/********* experience */
+button {
   font-size: 16px;
   padding: 5px 10px;
   width: fit-content;
@@ -278,11 +292,23 @@ nav ul li a:hover:after {
   background-color: orange;
 }
 
-.btn:hover {
+button:hover {
   border: 1px orange solid;
   color: var(--color-light-gray);
   background-color: var(--color-primary);
 }
+
+
+#experience .btn {
+  position: absolute;
+  left: 0;
+}
+
+.btn {
+  display: block;
+  margin: 20px auto;
+}
+
 /********************/
 
 /* ******************************************************** portfolio */
@@ -305,9 +331,30 @@ nav ul li a:hover:after {
   /* overflow: hidden; */
 }
 
-.work img {
+/* .work img {
   width: 100%;
   display: block;
+} */
+
+video {
+  margin: 2px;
+  width: 320px;
+  /* height: 360px; */
+}
+
+.worklink {
+  text-decoration: none;
+  color: var(--color-light-gray);
+}
+
+.worklink:hover {
+  text-decoration: none;
+  color: var(--color-mid-blue);
+}
+
+.pworksource {
+  margin: 2px 4px;
+  color: orange;
 }
 
 .layer {
@@ -416,6 +463,7 @@ form .btn2 {
 nav .fa-solid {
   display: none;
 }
+
 /*******/
 /* end */
 /*******/
@@ -427,6 +475,32 @@ nav .fa-solid {
 /* start */
 /*********/
 @media only screen and (max-width: 1280px) {
+
+  /***/
+  #skills ul li span {
+    /* background-color: var(--color-primary); */
+    /* text-align: center; */
+    /* font-size: 14px; */
+    /* border: 1px green solid; */
+    /* border-radius: 15px; */
+    /* display: inline-block; */
+    /* width: 100px; */
+    /* padding: 5px 2px; */
+    /* margin: 2px; */
+  }
+
+  video {
+    /* margin: 2px; */
+    width: 305px;
+    /* height: 360px; */
+
+    .pworksource {
+      /* margin: 2px 4px; */
+      /* color: orange; */
+    }
+  }
+
+  /***/
   #sideMenu {
     /* border: 1px red solid; */
     /* position: fixed; */
@@ -434,6 +508,7 @@ nav .fa-solid {
     /* top: 10px; */
     /* z-index: 1; */
   }
+
   .img-home {
     /* position: absolute; */
     /* filter: grayscale(100%); */
@@ -659,6 +734,7 @@ nav .fa-solid {
     /* color: var(--color-light-gray); */
     /* background-color: var(--color-primary); */
   }
+
   /********************/
   /********************************************** portfolio */
   #portfolio .container {
@@ -812,6 +888,30 @@ nav .fa-solid {
 /* start */
 /*********/
 @media only screen and (max-width: 1080px) {
+  /***/
+#skills ul li span {
+  /* background-color: var(--color-primary); */
+  /* text-align: center; */
+  /* font-size: 14px; */
+  /* border: 1px green solid; */
+  /* border-radius: 15px; */
+  /* display: inline-block; */
+  /* width: 100px; */
+  /* padding: 5px 2px; */
+  /* margin: 2px; */
+}
+
+video {
+  /* margin: 2px; */
+  width: 235px;
+  /* height: 360px; */
+
+  .pworksource {
+    /* margin: 2px 4px; */
+    /* color: orange; */
+  }
+}
+/***/
   #sideMenu {
     /* border: 1px red solid; */
     /* position: fixed; */
@@ -819,6 +919,7 @@ nav .fa-solid {
     /* top: 10px; */
     /* z-index: 1; */
   }
+
   .img-home {
     /* position: absolute; */
     /* filter: grayscale(100%); */
@@ -1043,6 +1144,7 @@ nav .fa-solid {
     /* color: var(--color-light-gray); */
     /* background-color: var(--color-primary); */
   }
+
   /********************/
   /********************************************** portfolio */
   #portfolio .container {
@@ -1384,7 +1486,7 @@ nav .fa-solid {
   #skills ul li {
     /* border: 1px blue solid; */
     /* display: inline-block; */
-    width: 350px;
+    /* width: 350px; */
   }
 
   #skills ul .rateBox {
@@ -1447,8 +1549,33 @@ nav .fa-solid {
     /* color: var(--color-light-gray); */
     /* background-color: var(--color-primary); */
   }
+
   /********************/
   /********************************************** portfolio */
+  /***/
+#skills ul li span {
+  /* background-color: var(--color-primary); */
+  /* text-align: center; */
+  /* font-size: 14px; */
+  /* border: 1px green solid; */
+  /* border-radius: 15px; */
+  /* display: inline-block; */
+  /* width: 100px; */
+  /* padding: 5px 2px; */
+  /* margin: 2px; */
+}
+
+video {
+  margin: 8px 8px;
+  /* width: 320px; */
+  /* height: 360px; */
+
+  .pworksource {
+    /* margin: 2px 4px; */
+    /* color: orange; */
+  }
+}
+/***/
   #portfolio .container {
     /* border: 1px red solid; */
     padding-top: 200px;
@@ -1487,14 +1614,14 @@ nav .fa-solid {
     /* color: orange; */
     width: max-content;
     /* position: absolute; */
-    top: 100px;
-    left: 250px;
+    top: 60px;
+    left: 260px;
     /* font-size: small; */
   }
 
   .layer h3 {
     /* border: 1px red solid; */
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .construction {
@@ -1855,6 +1982,7 @@ nav .fa-solid {
     /* color: var(--color-light-gray); */
     /* background-color: var(--color-primary); */
   }
+
   /********************/
   /********************************************** portfolio */
   #portfolio .container {
@@ -2125,7 +2253,7 @@ nav .fa-solid {
     /* flex-basis: 100%; */
     /* margin: 0px; */
     /* padding: 0; */
-    /* height: 700px; */
+    height: 900px;
     /* width: 100px; */
   }
 
@@ -2263,6 +2391,7 @@ nav .fa-solid {
     /* color: var(--color-light-gray); */
     /* background-color: var(--color-primary); */
   }
+
   /********************/
   /********************************************** portfolio */
   #portfolio .container {
@@ -2310,7 +2439,7 @@ nav .fa-solid {
 
   .layer h3 {
     /* border: 1px red solid; */
-    /* font-size: 20px; */
+    font-size: 20px;
   }
 
   .construction {
@@ -2535,7 +2664,7 @@ nav .fa-solid {
     /* flex-basis: 100%; */
     /* margin: 0px; */
     /* padding: 0; */
-    height: 500px;
+    height: 700px;
     /* width: 100px; */
   }
 
@@ -2610,7 +2739,7 @@ nav .fa-solid {
   #skills ul li {
     /* border: 1px blue solid; */
     /* display: inline-block; */
-    width: 300px;
+    /* width: 300px; */
   }
 
   #skills ul .rateBox {
@@ -2673,6 +2802,7 @@ nav .fa-solid {
     /* color: var(--color-light-gray); */
     /* background-color: var(--color-primary); */
   }
+
   /********************/
   /********************************************** portfolio */
   #portfolio .container {
@@ -2713,8 +2843,8 @@ nav .fa-solid {
     /* color: orange; */
     /* width: max-content; */
     /* position: absolute; */
-    top: 55px;
-    left: 150px;
+    top: -20px;
+    left: 0px;
     /* font-size: small; */
   }
 
@@ -2777,7 +2907,7 @@ nav .fa-solid {
   form {
     /* border: 1px red solid; */
     margin: 5px 0 0 0
-    /* width: 100%; */
+      /* width: 100%; */
   }
 
   form input,
@@ -2832,6 +2962,7 @@ nav .fa-solid {
 /* start */
 /*********/
 @media only screen and (max-width: 430px) {
+
   #header,
   #contacts,
   #about,
@@ -2842,7 +2973,7 @@ nav .fa-solid {
     height: 100vh;
     /* position: relative; */
   }
-  
+
   .container {
     /* border: 1px red solid; */
     /* padding: 10px 10%; */
@@ -2966,7 +3097,7 @@ nav .fa-solid {
     /* flex-basis: 100%; */
     /* margin: 0px; */
     /* padding: 0; */
-    height: 700px;
+    height: 870px;
     /* width: 100px; */
   }
 
@@ -3041,7 +3172,7 @@ nav .fa-solid {
   #skills ul li {
     /* border: 1px blue solid; */
     /* display: inline-block; */
-    width: 300px;
+    /* width: 300px; */
   }
 
   #skills ul .rateBox {
@@ -3052,7 +3183,7 @@ nav .fa-solid {
   #skills ul li span {
     /* border: 1px green solid; */
     /* display: inline-block; */
-    width: 85px;
+    /* width: 85px; */
   }
 
   /****/
@@ -3104,6 +3235,7 @@ nav .fa-solid {
     /* color: var(--color-light-gray); */
     /* background-color: var(--color-primary); */
   }
+
   /********************/
   /********************************************** portfolio */
   #portfolio .container {
@@ -3523,6 +3655,7 @@ nav .fa-solid {
     /* color: var(--color-light-gray); */
     /* background-color: var(--color-primary); */
   }
+
   /********************/
   /********************************************** portfolio */
   #portfolio .container {
@@ -3929,6 +4062,7 @@ nav .fa-solid {
     /* color: var(--color-light-gray); */
     /* background-color: var(--color-primary); */
   }
+
   /********************/
   /********************************************** portfolio */
   #portfolio .container {
@@ -4033,7 +4167,7 @@ nav .fa-solid {
   form {
     /* border: 1px red solid; */
     margin: 20px 0 0 0
-    /* width: 100%; */
+      /* width: 100%; */
   }
 
   form input,
@@ -4341,6 +4475,7 @@ nav .fa-solid {
     /* color: var(--color-light-gray); */
     /* background-color: var(--color-primary); */
   }
+
   /********************/
   /********************************************** portfolio */
   #portfolio .container {
@@ -4488,6 +4623,7 @@ nav .fa-solid {
     /* height: fit-content; */
   }
 }
+
 /*******/
 /* end */
 /*******/
